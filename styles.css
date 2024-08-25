@@ -1,5 +1,16 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
 html {
-  font-size: 14px;
+  font-size: calc(10px + 0.6vh);
 }
 
 body {
@@ -7,6 +18,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
@@ -14,19 +26,99 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  margin: 2rem 1rem;
+  margin: 2rem 1.2rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
   clip-path: fill-box;
 }
 
+.image-box picture {
+  width: 100%;
+  height: 100%;
+}
 .image-box img {
   width: 100%;
   height: 100%;
 }
 
 .content-box {
-  padding: 1rem;
+  padding: 1.8rem;
+  box-sizing: border-box;
+}
+.content-box .second-title {
+  letter-spacing: calc(0.1rem + 4px);
+  text-transform: uppercase;
+  line-height: normal;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.content-box h1 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  margin: 0;
+  line-height: 2.2rem;
+  margin: calc(16px + 0.6rem) 0;
+}
+.content-box p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: calc(14px + 0.8rem);
+  margin: calc(6px + 0.2rem) 0;
+}
+.content-box .price {
+  color: hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+}
+.content-box .old-price {
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  text-decoration: line-through;
+  margin-left: calc(8px + 1rem);
+}
+.content-box button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  padding: 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.content-box button:hover {
+  background-color: #1c3b30;
+}
+
+@media (min-width: 576px) {
+  main {
+    flex-direction: row;
+    max-width: 624px;
+  }
+  .image-box {
+    flex: 1;
+    flex-basis: 50%;
+  }
+  .content-box {
+    flex: 1;
+    flex-basis: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
