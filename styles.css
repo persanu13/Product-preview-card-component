@@ -1,0 +1,32 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  clip-path: fill-box;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
